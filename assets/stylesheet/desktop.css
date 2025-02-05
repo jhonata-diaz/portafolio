@@ -294,19 +294,27 @@ div.btn {
 }
 
 .cards_container--proyectos {
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas fijas */
+    gap: 2rem; /* Espaciado entre tarjetas */
     justify-content: center;
+    align-items: start;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .cards--proyectos {
-    width: 40rem;
-    height: 40rem;
+    width: 100%; /* Se adapta al contenedor */
+    max-width: 35rem; /* Limita el ancho */
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 0 1.5rem;
+    margin: 1rem auto; /* Espaciado uniforme */
     z-index: 1;
 }
+
 
 .text-portafolio {
     margin-top: -3rem;
